@@ -8,16 +8,16 @@ func bmiCalculator(weightInPounds: Double, heightInInches: Double ) -> String {
     var interpretation = ""
     
     if bmiResults > 25 {
-        interpretation = "Your are overweight."
+        interpretation = "you are overweight."
     }
     else if bmiResults > 18.5 && bmiResults <= 25 {
-        interpretation = "Your are in the normal weight range."
+        interpretation = "you are in the normal weight range."
     }
     else {
-        interpretation = "You are underweight."
+        interpretation = "you are underweight."
     }
     
     return "Your BMI is \(shortenedBMI) and \(interpretation)"
 }
 
-print(bmiCalculator(weightInPounds: 175, heightInInches: 71))
+print(bmiCalculator(weightInPounds: 127, heightInInches: 67))
